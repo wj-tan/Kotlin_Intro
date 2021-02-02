@@ -44,7 +44,7 @@ class TitleFragment : Fragment() {
     // This method add the options menu and inflate the menu resource file
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         super.onCreateOptionsMenu(menu, inflater)
-        inflater.inflate(R.menu.winner_menu, menu)
+        inflater.inflate(R.menu.options_menu, menu)
     }
 
     // Method for handling the appropriate action to take then the menu item is tapped
