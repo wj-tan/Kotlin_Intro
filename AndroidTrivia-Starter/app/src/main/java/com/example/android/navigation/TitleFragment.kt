@@ -31,6 +31,7 @@ class TitleFragment : Fragment() {
 
         // Play button on the TitleFragment Play Button
         // action_titleFragment_to_gameFragment for this case is the id set in the navigation.xml
+        // Pressing the button will navigate to the next screen
         binding.playButton.setOnClickListener{
             view : View -> view.findNavController().navigate(R.id.action_titleFragment_to_gameFragment)
         }
@@ -44,7 +45,7 @@ class TitleFragment : Fragment() {
     // This method add the options menu and inflate the menu resource file
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         super.onCreateOptionsMenu(menu, inflater)
-        inflater.inflate(R.menu.options_menu, menu)
+        inflater.inflate(R.menu.navdrawer_menu, menu)
     }
 
     // Method for handling the appropriate action to take then the menu item is tapped
